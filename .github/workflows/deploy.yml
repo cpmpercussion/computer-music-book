@@ -2,10 +2,6 @@ name: Build and Deploy
 
 on: push
 
-name: Build and Publis
-
-on: push
-
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
