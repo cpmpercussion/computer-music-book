@@ -15,7 +15,7 @@ jobs:
           mkdir output  # create output dir
       - name: build
         run: |
-          make
+          make smc.html
       - name: move file
         run: |
           mv smc.* output
