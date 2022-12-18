@@ -1,0 +1,32 @@
+name: Build and Deploy
+
+on: push
+
+name: Build and Publis
+
+on: push
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: setup pandoc
+        uses: nikeee/setup-pandoc@v1
+      - name: create output dir
+        run: |
+          mkdir output  # create output dir
+      - name: build
+        run: |
+          make
+      - name: move file
+        run: |
+          mv smc.* output
+      - name: rename html
+          mv output/smc.html output/index.html 
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.2.5
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: output # The folder the action should deploy.
