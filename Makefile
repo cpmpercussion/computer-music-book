@@ -9,7 +9,7 @@ OUTPUT_DOCS=\
 REFS_FILE=src/references.bib
 CSL_FILE=templates/apa.csl
 ARGS_REFS=--bibliography $(REFS_FILE) --csl $(CSL_FILE) --citeproc
-ARGS_SECTIONS=--variable=numbersections --variable=indent --number-sections --listings
+ARGS_SECTIONS=--variable=numbersections --variable=indent --number-sections --listings --table-of-contents
 ARGS_LATEX=\
 	-V 'geometry: left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm' \
 	-V 'papersize: a4' \
