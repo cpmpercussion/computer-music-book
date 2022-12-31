@@ -1,9 +1,134 @@
 <h1 data-number="1" id="digital-sound"><span
 class="header-section-number">1</span> Digital Sound</h1>
-<p>bla bla bla.</p>
+<p>This chapter is about</p>
+<h2 data-number="1.1" id="sound-and-waves"><span
+class="header-section-number">1.1</span> Sound and waves</h2>
+<ul>
+<li><p>Sound is produced by compression waves in the air.</p></li>
+<li><p>Loudspeakers create compression waves in the air by pushing air
+towards and away from the listener.</p></li>
+<li><p>Microphones move in response to pressure waves in the air and
+create a voltage on a wire.</p></li>
+<li><p>(dynamic) Microphones and speakers are basically the same thing:
+you cann use a speaker as a (bad) microphone.</p></li>
+<li><p>pitch (frequency)</p></li>
+<li><p>loudness (amplitude)</p></li>
+</ul>
+<h2 data-number="1.2" id="samples"><span
+class="header-section-number">1.2</span> Samples</h2>
+<h3 data-number="1.2.1" id="analogue-to-digital-conversion"><span
+class="header-section-number">1.2.1</span> Analogue to Digital
+Conversion</h3>
+<ul>
+<li>A sound wave is represented as an analogue voltage.</li>
+<li>An ADC periodically records the voltage level as a (digital)
+number.</li>
+<li>The sound is now represented as a a sequence of numbers.</li>
+</ul>
+<h3 data-number="1.2.2" id="digital-to-analogue-conversion"><span
+class="header-section-number">1.2.2</span> Digital to Analogue
+Conversion</h3>
+<ul>
+<li>The sequence of numbers representing a sound is preriodically
+produced as a voltage on a wire.</li>
+<li>A filter is applied to smooth out the stepped voltage changes</li>
+<li>The sound is now back as an analogue voltage.</li>
+</ul>
+<h3 data-number="1.2.3" id="limitations"><span
+class="header-section-number">1.2.3</span> Limitations</h3>
+<ul>
+<li>Clipping</li>
+<li>Signal Range</li>
+<li>Frequency Range</li>
+<li>Noise</li>
+</ul>
+<h2 data-number="1.3" id="organised-sound"><span
+class="header-section-number">1.3</span> Organised Sound</h2>
+<ul>
+<li>We can use electronics and computers to create specific sounds at
+specific times.</li>
+<li>In fact, any sound at any time.</li>
+<li>This was a <em>big deal</em> (TM) when it was realised (well before
+it was completely practical) in the early twentieth century.</li>
+<li>The composer, Edgard Varese, coined a term “organised sound” to
+refer to the new kinds of music that might be possible with electronic
+control over sound creation.</li>
+</ul>
+<p>In this class we take an <em>organised sound</em> approach to musical
+composition. In “traditional” music theory, you might be aware of
+concepts like scales, chords, and harmonic progressions that can be used
+to build compositions. These concepts are not helpful, at least in the
+begining stages of learn ing computer music. Here, the building blocks
+are <em>sounds</em>, created, mutated, and overlapped in time to create
+music.</p>
+<h2 data-number="1.4" id="making-a-beep"><span
+class="header-section-number">1.4</span> Making a beep</h2>
+<ul>
+<li>some kind of web audio example making a beep.</li>
+</ul>
+<h2 data-number="1.5" id="unit-generators"><span
+class="header-section-number">1.5</span> Unit Generators</h2>
+<ul>
+<li>coined by Max Mathews to represent components of sound synthesis
+software</li>
+<li>sound sysnthesis involves a chain (really a graph) of sound creating
+and processing functions.</li>
+<li>think of the signal chain for a guitar through effects pedals, then
+to an amplifier.</li>
+</ul>
+<h2 data-number="1.6" id="frequency-time-representations-of-sound"><span
+class="header-section-number">1.6</span> Frequency-Time Representations
+of Sound</h2>
+<ul>
+<li>already two representations: analogue voltage, and samples</li>
+<li>another more abstract representation is to consider the frequencies
+present over time.</li>
+<li>An algorithm called the Fourier transform lets us turn sampled sound
+into a frequency sequence (although it’s not perfect and there are more
+details about how it works).</li>
+</ul>
 <h1 data-number="2" id="synthesis"><span
 class="header-section-number">2</span> Synthesis</h1>
-<p>bla bla bla</p>
+<h2 data-number="2.1" id="unit-generators-1"><span
+class="header-section-number">2.1</span> Unit Generators</h2>
+<ul>
+<li>Sine tone generator</li>
+<li>Ramp generator</li>
+<li>Envelope generator</li>
+</ul>
+<h2 data-number="2.2" id="basic-waveforms"><span
+class="header-section-number">2.2</span> Basic Waveforms</h2>
+<ul>
+<li>Square (Pulse)</li>
+<li>Saw</li>
+<li>Triangle</li>
+<li>Sine</li>
+</ul>
+<h2 data-number="2.3" id="controlling-volume"><span
+class="header-section-number">2.3</span> Controlling volume</h2>
+<ul>
+<li>Use <code>*</code> and envelope generators to control volume</li>
+<li>Making a “tremolo” effect.</li>
+</ul>
+<h2 data-number="2.4" id="controlling-pitch"><span
+class="header-section-number">2.4</span> Controlling pitch</h2>
+<ul>
+<li>looping through a wave table.</li>
+</ul>
+<h2 data-number="2.5" id="creating-a-note"><span
+class="header-section-number">2.5</span> Creating a note</h2>
+<ul>
+<li>Alternative definition “sound event” or “sound object”</li>
+<li>pitch</li>
+<li>duration</li>
+<li>loudness</li>
+<li>timbre</li>
+<li>other evolving qualities</li>
+</ul>
+<h2 data-number="2.6" id="frequency-modulation"><span
+class="header-section-number">2.6</span> Frequency Modulation</h2>
+<h2 data-number="2.7" id="creating-some-music"><span
+class="header-section-number">2.7</span> Creating some music</h2>
 <h1 data-number="3" id="sampling"><span
 class="header-section-number">3</span> Sampling</h1>
 <p>bla bla bla</p>
